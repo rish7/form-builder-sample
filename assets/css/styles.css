@@ -1,0 +1,173 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+#outterWrapperDesignArea{
+    overflow: scroll;
+    margin: 10px auto;
+    max-width:1200px;
+}
+#wrapperDesignArea{
+    height:650px;
+    width:1200px;
+    background-color:#eee;
+}
+#inputControllers, #templateInputs{
+    height:600px;
+    min-width: 100px;
+    width:15%;
+    float:left;
+    padding: 10px;
+    margin: 10px;
+    border:1px solid #999;
+    background: #eee;
+}
+
+#inputControllers h2, #templateInputs h2{
+    background: #5796c6;
+    Color:#fff;
+    margin: 0px;
+    padding: 5px;
+}
+
+#designArea{
+    width:700px;
+    position: relative;
+    color:#FFF;
+    height: 600px;
+    border:1px solid #999;
+    float:left;
+    padding: 10px;
+    margin: 10px;
+    background-color:#6D8DA1;
+    background-image: linear-gradient(rgba(250,250,250,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(250,250,250,.3) 1px, transparent 1px);
+    background-size:20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+#designArea.ui-state-active{
+    background-color:#3E8EBF;
+}
+.ui-state-highlight{
+    background: red;
+}
+
+.nh-controllerType{
+    padding:5px;
+    margin: 5px;
+    border:1px solid #ccc;
+    background-color: #eee;
+    z-index: 1000000;
+    min-width:100px;
+    cursor: pointer;
+}
+#controllersAccordion.ui-accordion .ui-accordion-content{
+    padding: 10px 0px;
+}
+
+/*Preview Inputs Styles*/
+.previewInput{
+    cursor: pointer;
+    border:2px solid #bbb;
+    background-color: #fff;
+    color:#000;
+    padding: 5px;
+    overflow: hidden;
+    -webkit-animation: bummer 0.5s;
+    animation: bummer 0.5s;
+    -webkit-transform: scale(0,0); 
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.previewInputName{cursor: pointer;}
+.previewInputAddress{cursor: pointer;}
+.previewInputAddress div{
+    padding: 3px;
+}
+
+.previewInputLabel{cursor: pointer;}
+/*Preview Inputs Styles -- Edit Mode*/
+.previewEditNameInput{
+    width:90%;
+}
+/* What is the use of this?
+#droppable { width: 50px; height: 50px; padding: 0.5em; float: right; margin: 10px; }
+*/
+
+.previewInputImage{
+    cursor: pointer;
+}
+.previewInputImage .innerArea img{
+    width:100%!important;
+    height:100%!important;
+}
+.inputTypeCloseButton{
+    position: absolute;
+    top:1px;
+    right:1px;
+}
+
+@-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,1); 
+    }
+}
+
+@keyframes bummer {
+    100% {
+        transform: scale(1,1); 
+    }
+}
+
+/*Model Window*/
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 800px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 700px;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    z-index: 12;
+}
+
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+#designAreaPreview{
+    width:700px;
+    position: relative;
+    background-color:#FFF;
+    height: 600px;
+}

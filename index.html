@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link href="assets/jquery-ui/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+</head>
+
+<body>
+  <div id="outterWrapperDesignArea">
+    <div id="wrapperDesignArea">
+      <div id="inputControllers">
+        <h2>Section</h2>
+        <div id="controllersAccordion">
+          <h3>Section 1</h3>
+          <div id="section1Wrapper">
+            Loading...!
+          </div>
+          <h3>Section 2</h3>
+          <div id="section2Wrapper">
+            Loading...!
+          </div>
+        </div>
+      </div>
+      <div id="designArea">
+
+      </div>
+      <div id="templateInputs">
+        <h2>Template inputs</h2>
+      </div>
+    </div>
+    <div style="clear:both;">
+      <textarea id="templateData" rows="5" style="width:400px;"></textarea>
+      <input id="saveTemplateDataBtn" type="button" value="Save Template" />
+      <input id="insertTemplateDataBtn" type="button" value="Insert from Template" />
+      <input id="PreviewBtn" type="button" value="Preview from Dsign Area" />
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="designAreaPreviewModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="designAreaPreviewCloseBtn" class="close">&times;</span>
+      <div id="designAreaPreview"></div>
+    </div>
+
+  </div>
+  <script src="assets/jquery/jquery.js"></script>
+  <script src="assets/jquery-ui/jquery-ui.js"></script>
+  <script src="assets/script.js"></script>
+
+</body>
+
+</html>
